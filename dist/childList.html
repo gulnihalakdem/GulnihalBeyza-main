@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SportKids</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+ 
+    <div class="first-div">
+        <img src="symbol2.jpg" alt="Logo" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+        <div class="line"></div>
+
+        <a class="nav-link" href="adminHomePage.html">Announcement</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Instructor</a>
+        <a class="sub-link" href="instructorAdd.html">Add</a>
+        <a class="sub-link" href="instructorRemove.html">Remove</a>
+        <a class="sub-link"  href="instructorList.html">List</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Parent</a>
+        <a class="sub-link" href="parentAdd.html">Add</a>
+        <a class="sub-link" href="parentRemove.html">Remove</a>
+        <a class="sub-link" href="parentList.html">List</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Child</a>
+        <a class="sub-link" href="childAdd.html">Add</a>
+        <a class="sub-link" href="childRemove.html">Remove</a>
+        <a class="sub-link" href="childList.html">List</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Course</a>
+        <a class="sub-link" href="courseAdd.html">Add</a>
+        <a class="sub-link" href="courseRemove.html">Remove</a>
+        <a class="sub-link" href="courseList.html">List</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Payment</a>
+        <a class="sub-link" href="payment.html">Add</a>
+        <a class="sub-link" href="paymentList.html">List</a>  
+
+      </div>
+     
+        <div class="second-div"><br><br><br>
+          <div>      
+            <a class="exit" href="logIn.html" style="color:#296BCE;" > Log Out</a>
+           </div>
+           <br><br><br><br><br><br>
+      
+           <span class="ptitle">Listing the Children</span> <br><br>
+    
+      <form class="childListForm">
+
+           <!-- Order By Buttons-->
+           <div class="orderBy-btns">
+            <button class = "orderById"> Order by Id </button>
+            <button class = "orderByName"> Order by Name </button>
+            <button class = "orderBySurname"> Order by Surname </button>
+            <button class = "orderByParentId"> Order by Parent Id </button>
+           </div>
+
+         
+               
+         <div>
+          <table class="tbl-class">
+            <thead>
+              
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Parent Id</th>
+                <!-- Add more columns based on your Firestore schema -->
+              
+            </thead>
+            <tbody id="tbody1">
+           
+            </tbody>
+          </table>
+
+        
+
+         </div>
+      </form>
+        </div>
+        <script src = "bundle.js"></script>
+
+        <!--
+        <script type="module">
+
+          var stdNo=0;
+          var tbody = document.getElementById("tbody1");
+
+          function AddItemToTable(ID,name,surname)
+          {
+            let trow = document.createElement("trow");
+            let td1 = document.createElement("td");
+            let td2 = document.createElement("td");
+            let td3 = document.createElement("td");
+
+            td1.innerHTML = stdNo;
+            td2.innerHTML = name;
+            td3.innerHTML =surname;
+
+            trow.appendChild(td1);
+            trow.appendChild(td2);
+            trow.appendChild(td3);
+
+            tbody.appendChild(trow);
+          }
+      
+          function AddAllItemsToTable(theO)
+          {
+            stdNo=0;
+            tbody.innerHTML="";
+            theO.forEach(element => {
+              AddItemToTable(element.ID,element.name,element.surname);
+            });
+          }
+
+          import { initializeApp } from 'firebase/app';
+          import {
+              getFirestore, collection, getDocs, //lecture 1,,,, for lecture 3, getDocs is replaced by onSnapshot
+              addDoc, deleteDoc, doc, //lecture 2
+              onSnapshot, //lecture 3
+              query, where, //lecture 4
+              orderBy, serverTimestamp, //lecture 5
+              getDoc, //lecture 6
+              updateDoc //lecture 7
+          } from 'firebase/firestore';
+          
+          import {
+              getAuth, createUserWithEmailAndPassword, //lecture 8
+              signOut, signInWithEmailAndPassword //lecture 9
+          } from 'firebase/auth';
+          const firebaseConfig = {
+              apiKey: "AIzaSyAw1lJzMM_Osg9OYg8ceZyEuCYPUftX4Xk",
+              authDomain: "sportkidsapp.firebaseapp.com",
+              projectId: "sportkidsapp",
+              storageBucket: "sportkidsapp.appspot.com",
+              messagingSenderId: "560785087210",
+              appId: "1:560785087210:web:121d564f9dad40feba9593",
+              measurementId: "G-PYP682JRTE"
+            };
+          
+          initializeApp(firebaseConfig);
+            
+          console.log("js File is working");
+          
+          const db = getFirestore();
+
+          async function GetAllDataOnce(){
+            const querySnapshot = await getDocs(collection(db,"children"));
+        
+            var childrenA = [];
+        
+            querySnapshot.forEach(doc => {
+                childrenA.push(doc.data());
+            });
+        
+            AddAllItemsToTable(childrenA);
+        }
+
+        async function GetAllDataRealtime(){
+          const dbRef = await collection(db,"children");
+      
+          onSnapshot(dbRef,(querySnapshot) => {
+            var childrenA = [];
+
+            querySnapshot.forEach(doc => {
+              childrenA.push(doc.data());
+            })
+            AddAllItemsToTable(childrenA);
+          });
+      
+      }
+        window.onload = GetAllDataRealtime;
+
+        </script>
+        -->
+</body>
+
+</html>
+
+    
+

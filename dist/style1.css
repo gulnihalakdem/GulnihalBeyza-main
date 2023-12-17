@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .first-div {
+    width: 300px;
+    height: 1200px;
+    background-color: #296BCE; /* Just for visualization */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .sub-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 12px;
+
+    cursor: pointer;
+    padding-left: 230px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+  }
+
+  .exit {       
+    display: block;
+    text-decoration: none;
+    color: #296BCE;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-left: 1100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .second-div {
+    width: calc(97.35% - 300px);
+    height: 150px; /* Adjust the height as needed */
+    background-color: #EDF0F9; /* Just for visualization */
+    position: absolute;
+    top: 0;
+    left: 340px;
+    position: relative;
+
+  }
+
+  .ptitle{
+    color:  #296BCE; 
+    padding-left: 70px;
+    font-size: 26px;
+   }
+  
+   .Form{
+     padding-left: 70px;
+   }
+
+  .horizontal-inputs {
+    white-space: nowrap; /* Prevents line breaks */
+  }
+
+  .horizontal-inputs {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between input elements */
+    padding-left: 70px;
+    
+  }
+  .slide{
+    padding-left: 70px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    background-color: #EDF0F9;
+  }
+
+  input[type="button"] {
+    width: 60px;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    background-color: #EDF0F9;
+    
+  }
+  .custom-textarea {
+    width: 550px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing only */
+    outline: none;
+    font-family: Arial, sans-serif; /* Specify the font family */
+    font-size: 14px; /* Specify the font size */
+    line-height: 1.5; /* Specify the line height */
+    color: #333; /* Specify the text color */
+    background-color: #EDF0F9; /* Change the background color here */
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 130px; /* Adjust the gap to control the space between texts */
+    margin-bottom: 20px;
+    padding-left: 40px;
+  }
+  table {
+    border-collapse: separate;
+    border-spacing: 10px; /* Adjust the value as needed */
+    padding-left:50px
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  
+  }
+
+  th {
+    background-color: #f2f2f2;
+    width: 120px;
+  }
+
+  .orderBy-btns
+  {
+    padding-left:800px
+  }

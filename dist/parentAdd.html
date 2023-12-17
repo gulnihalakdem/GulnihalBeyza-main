@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SportKids</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+ 
+    <div class="first-div">
+        <img src="symbol2.jpg" alt="Logo" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+        <div class="line"></div>
+
+        <a class="nav-link" href="adminHomePage.html">Announcement</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Instructor</a>
+        <a class="sub-link" href="instructorAdd.html">Add</a>
+        <a class="sub-link" href="instructorRemove.html">Remove</a>
+        <a class="sub-link" href="instructorList.html">List</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Parent</a>
+        <a class="sub-link" href="parentAdd.html">Add</a>
+        <a class="sub-link" href="parentRemove.html">Remove</a>
+        <a class="sub-link" href="parentList.html">List</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Child</a>
+        <a class="sub-link" href="childAdd.html">Add</a>
+        <a class="sub-link" href="childRemove.html">Remove</a>
+        <a class="sub-link" href="childList.html">List</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Course</a>
+        <a class="sub-link" href="courseAdd.html">Add</a>
+        <a class="sub-link" href="courseRemove.html">Remove</a>
+        <a class="sub-link" href="courseList.html">List</a>
+        <div class="line"></div>
+
+        <a class="nav-link" href="#">Payment</a>
+        <a class="sub-link" href="payment.html">Add</a>
+        <a class="sub-link" href="paymentList.html">List</a>  
+
+      </div>
+
+      <div class="second-div">
+        <br><br><br>
+        <div>      
+          <a class="exit" href="logIn.html" > Log Out</a>
+         </div>
+         <br><br><br><br><br><br>
+         
+        <p class="ptitle">Adding The Parent<p><br>
+
+           <!-- Form -->
+        <form class="parentAddForm">
+
+            <!-- Email -->
+          <div class="horizontal-inputs">
+            <label for="input1">Email</label><br>
+            <input type="email" id="input1" name="input1" required>
+          </div>
+
+            <!-- Password -->
+          <div class="horizontal-inputs">
+            <label for="input2">Password</label><br>
+            <input type="text" id="input2" name="input2" required>
+          </div>
+
+          <!-- Identity Number(ID) -->
+          <div class="horizontal-inputs">
+            <label for="input3">Identity Number(ID)</label><br>
+            <input type="number" id="input3" name="input3" required>
+          </div>
+
+          <br><br><br>
+        
+           <!-- Name -->
+           <div class="horizontal-inputs">
+              <label for="input4">Name</label><br>
+              <input type="text" id="input4" name="input4" required>
+           </div>
+
+            <!-- Surname -->
+            <div class="horizontal-inputs">
+              <label for="input5">Surname</label><br>
+              <input type="text" id="input5" name="input5" required>
+           </div>
+
+           <br><br><br>
+
+            <!-- Birthdate -->
+            <div class="horizontal-inputs">
+              <label for="input6">Birthdate</label><br>
+              <input type="date" id="input6" name="input6" required>
+           </div>
+
+            <!-- Phone -->
+            <div class="horizontal-inputs">
+              <label for="input7">Phone</label><br>
+              <input type="text" id="input7" name="input7" required>
+           </div>
+
+           <br><br><br>
+            <!-- Address -->
+            <div class="horizontal-inputs">
+              <label for="input8">Address</label><br>
+              <textarea id="input8" name="input8" class="custom-textarea" rows="8" cols="70" required></textarea>
+
+           </div><br><br>
+           
+
+           
+          <!-- Submit Button-->
+         <div class="slide">
+          <button class = "submit"> DONE </button>
+         </div>
+          
+        </form>
+        <script src = "bundle.js"></script>
+        </div>
+
+</body>
+</html>
